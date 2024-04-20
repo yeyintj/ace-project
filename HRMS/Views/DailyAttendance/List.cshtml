@@ -1,0 +1,37 @@
+﻿
+@model IList<DailyAttendanceViewModel>
+@TempData["info"]
+
+
+
+<div class="container">
+    <h1 class="text-center">Position List</h1>
+    <table class="table table-striped">
+        <tr>
+            <th>Code</th>
+            <th>Attendance Date</th>
+            <th>In Time</th>
+            <th>Out Time</th>
+        </tr>
+
+        @{
+            int index = 1;
+        }
+
+        @foreach (var h in Model)
+        {
+            <tr>
+                <td>@index</td>
+                <td>@h.AttendanceDate</td>
+                <td>@h.InTime</td>
+                <td>@h.OutTime</td>
+                <th>
+                    <a class="btn btn-info" href="/dailyattedance/edit?Id=@h.Id">Edit</a>
+                    <a class="btn btn-danger" href="/dailyattedance/delete?Id=@h.Id" onclick="return confirm('Are you sure want to delete the record?')">Delete</a>
+                </th>
+            </tr>
+            index++;
+        }
+
+    </table>
+</div>

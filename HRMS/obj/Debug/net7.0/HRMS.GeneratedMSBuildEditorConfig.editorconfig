@@ -1,0 +1,105 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HRMS
+build_property.RootNamespace = HRMS
+build_property.ProjectDir = /Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/DailyAttendance/Entry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFpbHlBdHRlbmRhbmNlL0VudHJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/DailyAttendance/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFpbHlBdHRlbmRhbmNlL0xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Department/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVwYXJ0bWVudC9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Department/Entry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVwYXJ0bWVudC9FbnRyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Department/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGVwYXJ0bWVudC9MaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/EmployeeReport/EmployeeDetailReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVSZXBvcnQvRW1wbG95ZWVEZXRhaWxSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/EmployeeReport/ReportByEmployeeFromCodeToCode.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVSZXBvcnQvUmVwb3J0QnlFbXBsb3llZUZyb21Db2RlVG9Db2RlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Emplyee/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbHllZS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Emplyee/Entry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbHllZS9FbnRyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Emplyee/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbHllZS9MaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Position/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zaXRpb24vRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Position/Entry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zaXRpb24vRW50cnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Position/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9zaXRpb24vTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Shift/Entry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hpZnQvRW50cnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Shift/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hpZnQvTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hlahlawai/Desktop/ACE/HRMSBatch-13/HRMS/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-wai5e52mco

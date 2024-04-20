@@ -1,0 +1,48 @@
+﻿
+<div class="container">
+
+
+    <h1 class="text-center">Daily Attendance</h1>
+
+    <form action="/dailyAttendance/entry" method="post" class="w-50 mx-auto">
+        <div class="mb-3">
+            <label class="from-label">AttendanceDate</label>
+            <input type="date" class="form-control" name="AttendanceDate" placeholder="AttendanceDate" />
+        </div>
+        <div class="mb-3">
+            <label class="from-label">InTime</label>
+            <input type="time" class="form-control" name="InTime" placeholder="InTime" />
+        </div>
+        <div class="mb-3">
+            <label class="from-label">OutTime</label>
+            <input type="time" class="form-control" name="OutTime" placeholder="OutTime" />
+        </div>
+
+        <div class="mb-3">
+
+            <label>Emplyee</label>
+            <select name="EmplyeeId" class="form-select">
+                <option value="x">--select emplyee--</option>
+
+                @foreach (var emplyee in ViewBag.Emplyees)
+                {
+                    <option value="@emplyee.Id">@emplyee.Code</option>
+                }
+            </select>
+        </div>
+
+        <div class="mb-3">
+
+            <label>Department</label>
+            <select name="EmplyeeId" class="form-select">
+                <option value="x">--select department--</option>
+
+                @foreach (var department in ViewBag.Departments)
+                {
+                    <option value="@department.Id">@department.Code</option>
+                }
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,95 @@
+﻿@model EmplyeeViewModel
+<div>
+    <h1 class="text-center">Emplyee</h1>
+
+
+    <form action="/emplyee/entry" method="post" class="w-50 mx-auto">
+        <div class="mb-3">
+            <label class="from-label">Code</label>
+            <input type="text" class="form-control" name="Code" placeholder="Code" value="@Model.Code" />
+        </div>
+        <div class="mb-3">
+            <label class="from-label">Name</label>
+            <input type="text" class="form-control" name="Name" placeholder="Name" value="@Model.Name" />
+        </div>
+        <div class="mb-3">
+            <label class="from-label">Email</label>
+            <input type="email" class="form-control" name="Email" placeholder="Email" value="@Model.Email" />
+        </div>
+        <div class="mb-3">
+            <label class="from-label d-block">Gender</label>
+            <input type="radio" class="form-check-input" name="Gender" value="m" id="male" @(Model.Gender == "m" ? "checked" : "") />
+            <label for="male" class="form-check-label me-2">Male</label>
+            <input type="radio" class="form-check-input" name="Gender" value="f" id="female" @(Model.Gender == "f" ? "checked" : "") />
+            <label for="female" class="form-check-label">Female</label>
+        </div>
+        <div class="mb-3">
+            <label class="from-label">DOB</label>
+            <input type="date" class="form-control" name="BOB" placeholder="date of b" value="@Model.DOB" />
+        </div>
+        <div class="mb-3">
+            <label class="from-label">BOE</label>
+            <input type="date" class="form-control" name="DOE" placeholder="date of e" value="@Model.DOE" />
+        </div>
+        <div class="mb-3">
+            <label class="from-label">DOR</label>
+            <input type="date" class="form-control" name="DOR" placeholder="date of R" value="@Model.DOR" />
+        </div>
+        <div class="mb-3">
+            <label class="from-label">Address</label>
+            <textarea class="form-control" name="Address">@Model.Address</textarea>
+        </div>
+        <div class="mb-3">
+            <label class="from-label">BasicSalary</label>
+            <input type="number" class="form-control" name="BasicSalary" placeholder="BasicSalary" value="@Model.BasicSalary" />
+        </div>
+        <div class="mb-3">
+            <label class="from-label" for="phone">Phone</label>
+            <input type="number" class="form-control" name="Phone" placeholder="Phone" id="phone" value="@Model.Phone" />
+        </div>
+
+        <div>
+            <label>Department</label>
+            <select name="DepartmentId" class="form-select">
+
+                @*<option value="x" selected>--select department--</option>*@
+                @foreach (var department in ViewBag.Departments)
+                {
+                        if(department.Id == Model.Id)
+    {
+
+                    <option value="@department.Id" selected>@department.Code</option>
+    }
+    else
+    {
+            <option value="@department.Id">@department.Code</option>
+    }
+                }
+            </select>
+        </div>
+
+        <div>
+            <label>Position</label>
+            <select name="PositionId" class="form-select">
+
+                <option value="x">--select opsition--</option>
+                @foreach (var position in ViewBag.Positions)
+                {
+
+                    if (position.Id == Model.Id)
+                    {
+
+                        <option value="@position.Id" selected>@position.Code</option>
+                    }
+                    else
+                    {
+                        <option value="@position.Id">@position.Code</option>
+                    }
+                }
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn btn-primary" type="reset">Cancle</button>
+    </form>
+
+</div>

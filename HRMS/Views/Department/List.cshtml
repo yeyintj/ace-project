@@ -1,0 +1,53 @@
+﻿
+@model IList<DepartmentViewModel>
+
+@if (TempData["info"] != null && TempData["info"].ToString().Contains("Delete"))
+{
+    <div class="text-center">
+        <p class="alert-danger">
+            @TempData["info"]
+        </p>
+    </div>
+}
+else
+{
+    <div class="text-center">
+        <p class="alert-info">
+            @TempData["info"]
+        </p>
+    </div>
+}
+
+
+<div class="container">
+    <h1 class="text-center">Department List</h1>
+    <table class="table table-striped">
+        <tr>
+            <th>Id</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>ExtensionPhone</th>
+            <th>Action</th>
+        </tr>
+
+        @{
+            int index = 1;
+        }
+
+        @foreach (var h in Model)
+        {
+            <tr>
+                <td>@index</td>
+                <td>@h.Code</td>
+                <td>@h.Name</td>
+                <td>@h.ExtensionPhone</td>
+                <th>
+                    <a class="btn btn-info" href="/department/edit?Id=@h.Id">Edit</a>
+                    <a class="btn btn-danger" href="/department/delete?Id=@h.Id" onclick="return confirm('Are you sure want to delete the record?')">Delete</a>
+                </th>
+            </tr>
+            index++;
+        }
+
+    </table>
+</div>

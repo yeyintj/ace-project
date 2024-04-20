@@ -1,0 +1,41 @@
+﻿
+@model DepartmentViewModel
+<div class="container">
+
+    <h1 class="text-center">Department</h1>
+
+    <form action="/department/entry" method="post" class="w-50 mx-auto">
+        <div class="mb-3">
+            <label class="from-label">Code</label>
+            <input type="text" class="form-control" name="Code" value="@Model.Code" />
+        </div>
+        <div class="mb-3">
+            <label class="from-label">Name</label>
+            <input type="text" class="form-control" name="Name" value="@Model.Name"/>
+        </div>
+        <div class="mb-3">
+            <label class="from-label">ExtensionPhone</label>
+            <input type="text" class="form-control" name="ExtensionPhone" value="@Model.ExtensionPhone"/>
+        </div>
+        <select name="PositionId" class="form-select mb-3">
+            @*<option value="x" selected>--select position--</option>*@
+
+            @foreach (var department in ViewBag.Positions)
+            {
+
+
+                @if (department.Id == Model.Id)
+                {
+
+                    <option value="@department.Id" selected>@department.Code</option>
+                }
+                else
+                {
+                    <option value="@department.Id">@department.Code</option>
+                }
+            }
+        </select>
+
+        <button class="btn btn-warning" type="submit">Edit</button>
+    </form>
+</div>

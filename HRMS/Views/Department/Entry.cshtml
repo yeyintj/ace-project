@@ -1,0 +1,32 @@
+﻿
+
+<div class="container">
+
+    <h1 class="text-center">Department</h1>
+
+    <form action="/department/entry" method="post" class="w-50 mx-auto">
+        <div class="mb-3">
+            <label class="form-label" for="code">Code</label>
+            <input type="text" class="form-control" name="Code" placeholder="Code" id="code"/>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="name">Name</label>
+            <input type="text" class="form-control" name="Name" placeholder="Name" id="name"/>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="phone">ExtensionPhone</label>
+            <input type="text" class="form-control" name="ExtensionPhone" placeholder="ExtensionPhone" id="phone"/>
+        </div>
+        <label for="position" class="form-label">Position</label>
+        <select name="PositionId" class="form-select mb-3" id="position">
+            <option value="x" selected>--select position--</option>
+
+            @foreach(var position in ViewBag.Positions)
+{
+                    <option value="@position.Id">@position.Code</option>
+}
+        </select>
+        
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>

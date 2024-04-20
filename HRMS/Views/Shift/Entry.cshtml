@@ -1,0 +1,31 @@
+﻿
+
+<h1 class="text-center">Shift</h1>
+
+<form action="/shift/entry" method="post" class="w-50 mx-auto">
+    <div class="mb-3">
+        <label class="from-label">Name</label>
+        <input type="text" class="form-control" name="Name" placeholder="" />
+    </div>
+    <div class="mb-3">
+        <label class="from-label">In Time</label>
+        <input type="time" class="form-control" name="InTime" placeholder="" />
+    </div>
+    <div class="mb-3">
+        <label class="from-label">Out Time</label>
+        <input type="time" class="form-control" name="OutTime" placeholder="" />
+    </div>
+    <div class="mb-3">
+        <label class="from-label">Late After</label>
+        <input type="time" class="form-control" name="LateAfter" placeholder="" />
+    </div>
+    <div class="mb-3">
+        <label class="from-label">Early Out Before</label>
+        <input type="time" class="form-control" name="EarlyOutBefore" placeholder="" />
+    </div>
+    
+    @*<select class="form-select">
+        <option>--select attendance--</option>
+    </select>*@
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>

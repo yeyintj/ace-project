@@ -1,0 +1,55 @@
+﻿@TempData["info"]
+@model IList<EmplyeeViewModel>
+
+<div class="container">
+    <h1 class="text-center">Emplyee List</h1>
+    <table class="table table-striped"  id="EmplyeeTable">
+        <tr>
+            <th>Id</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>DOB</th>
+            <th>DOE</th>
+            <th>DepartmentInfo</th>
+            <th>PositionInfo</th>
+            <th>BasicSalary</th>
+            <th>Phone</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+
+        @{
+            int index = 1;
+        }
+
+        @foreach (var h in Model)
+        {
+            <tr>
+                <td>@index</td>
+                <td>@h.Code</td>
+                <td>@h.Name</td>
+                <td>@h.Email</td>
+                <td>@h.DOB</td>
+                <td>@h.DOE</td>
+                <td>@h.DepartmentInfo</td>
+                <td>@h.PositionInfo</td>
+                <td>@h.BasicSalary</td>
+                <td>@h.Phone</td>
+                <td>@h.Gender</td>
+                <td>@h.Address</td>
+                <td>
+                    <a class="btn btn-info" href="/emplyee/edit?Id=@h.Id">Edit</a>
+                    <a class="btn btn-danger" href="/emplyee/delete?Id=@h.Id" onclick="return confirm('Are you sure want to delete the record?')">Delete</a>
+                </td>
+            </tr>
+            index++;
+        }
+
+    </table>
+</div>
+
+<script>$(document).ready(function () {
+    $("#EmplyeeTable").DataTable();
+    })</script>

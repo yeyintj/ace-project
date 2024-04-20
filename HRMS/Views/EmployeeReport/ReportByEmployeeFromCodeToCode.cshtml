@@ -1,0 +1,32 @@
+﻿<div class="w-50 mx-auto">
+    <h1 class="text-center">
+        Employee Detail Repoert
+    </h1>
+
+    <form action="/employeereport/ReportByEmployeeFromCodeToCode" method="get">
+        <div class="mb-3">
+            <label class="form-label">From Emplyee Code</label>
+            <input type="text" name="FromCode" class="form-control" placeholder="Enter form employee code..." />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">To Emplyee Code</label>
+            <input type="text" name="ToCode" class="form-control" placeholder="Enter to employee code..." />
+        </div>
+        <div class="mb-3">
+            <label class="form-lable">Department</label>
+            <select>
+                <option selected>--select department--</option>
+
+                @foreach(var department in ViewBag.Departments)
+{
+                        <option value="@department.Id">@department.Code</option>
+}
+            </select>
+        </div>
+
+        <div>
+            <button class="btn btn-primary" type="submit">Query</button>
+            <button class="btn btn-primary" type="reset">Cancel</button>
+        </div>
+    </form>
+</div>

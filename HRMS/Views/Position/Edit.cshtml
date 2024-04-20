@@ -1,0 +1,21 @@
+﻿
+@model PositionViewModel
+<h1 class="text-center">To Edit Position</h1>
+
+<form action="/position/update" method="post" class="w-50 mx-auto">
+    <input type="text" name="Id" value="@Model.Id" class="from-control" hidden/>
+    <div class="mb-3">
+        <label class="from-label">Code</label>
+        <input type="text" class="form-control" name="Code" placeholder="Code" value="@Model.Code"/>
+    </div>
+    <div class="mb-3">
+        <label class="from-label">Name</label>
+        <input type="text" class="form-control" name="Name" placeholder="Name" value="@Model.Name"/>
+    </div>
+    <div class="mb-3">
+        <label class="from-label">Level</label>
+        <input type="number" class="form-control" name="Level" placeholder="Level" value="@Model.Level"/>
+    </div>
+    
+    <button class="btn btn-primary" type="submit">Edit</button>
+</form>
